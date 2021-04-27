@@ -4,21 +4,12 @@ import entites2.Personne;
 
 public class TestPersonne {
     public static void main(String[] args) {
-        Personne p1 = new Personne();
-        Personne p2 = new Personne();
+        AdressePostale adr1 = new AdressePostale(22, "blabla", 34500, "ville");
+        AdressePostale adr2 = new AdressePostale(22, "blabla", 34500, "ville");
 
-        p1.nom = "MELHEB";
-        p1.prenom = "YOUNES";
-        p1.ap.codePostal = 34500;
-        p1.ap.libelleRue= "Marcel prévost";
-        p1.ap.numeroRue= 21;
-        p1.ap.ville= "Bézies";
+        Personne p1 = new Personne("MELHEB", "YOUNES",adr1);
+        Personne p2 = new Personne("MELHEB", "YOUNES",adr2);
 
-        p2.nom = "MELHEB";
-        p2.prenom = "YOUNES";
-        p2.ap.codePostal = 34500;
-        p2.ap.libelleRue= "Marcel prévost";
-        p2.ap.numeroRue= 21;
-        p2.ap.ville= "Bézies";
+
     }
 }
