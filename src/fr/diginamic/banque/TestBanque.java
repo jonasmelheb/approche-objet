@@ -5,7 +5,7 @@ import fr.diginamic.banque.entites.CompteTaux;
 
 public class TestBanque {
     public static void main(String[] args) {
-        Compte comptes[] = new Compte[2];
+        Compte[] comptes = new Compte[2];
 
         comptes[0] = new Compte(254789, 24587.0);
         comptes[1] = new CompteTaux(000002, 145000.0,25);

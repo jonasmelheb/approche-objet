@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class TestOperation {
     public static void main(String[] args) {
-        Operation operations[] = new Operation[4];
+        Operation[] operations = new Operation[4];
 
         operations[0] = new Credit(new Date(),254);
         operations[1] = new Credit(new Date(),255);
