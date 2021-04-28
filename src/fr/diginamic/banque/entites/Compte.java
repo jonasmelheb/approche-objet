@@ -10,19 +10,19 @@ public class Compte {
         this.soldeCompte = soldeCompte;
     }
 
-    private int getNumCompte() {
+    public int getNumCompte() {
         return numCompte;
     }
 
-    private double getSoldeCompte() {
+    public double getSoldeCompte() {
         return soldeCompte;
     }
 
-    private void setNumCompte(int numCompte) {
+    public void setNumCompte(int numCompte) {
         this.numCompte = numCompte;
     }
 
-    private void setSoldeCompte(double soldeCompte) {
+    public void setSoldeCompte(double soldeCompte) {
         this.soldeCompte = soldeCompte;
     }
 
