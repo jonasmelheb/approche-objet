@@ -1,4 +1,4 @@
-package fr.diginamic.banque;
+package fr.diginamic.banque.essais;
 
 import fr.diginamic.banque.entites.Credit;
 import fr.diginamic.banque.entites.Debit;
@@ -18,7 +18,7 @@ public class TestOperation {
         int sum = 0;
         for (Operation operation :
              operations) {
-            if (operation.getType() == "DEBIT") {
+            if (operation.getType().equals("DEBIT")) {
                 sum -= operation.getMontantOperation();
             } else {
                 sum += operation.getMontantOperation();
