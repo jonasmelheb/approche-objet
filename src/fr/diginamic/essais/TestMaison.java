@@ -5,6 +5,7 @@ import fr.diginamic.maison.*;
 public class TestMaison {
     public static void main(String[] args) {
         Chambre chambre = new Chambre(9,1);
+        Chambre chambre2 = new Chambre(6,1);
         SalleDeBain salleDeBain = new SalleDeBain(5,1);
         WC wc = new WC(2,1);
 
@@ -13,6 +14,8 @@ public class TestMaison {
 
         Maison maison = new Maison();
         maison.ajouterPiece(chambre);
+        maison.ajouterPiece(chambre2);
+        maison.ajouterPiece(salleDeBain);
         maison.ajouterPiece(salleDeBain);
         maison.ajouterPiece(wc);
         maison.ajouterPiece(cuisine);
@@ -21,5 +24,7 @@ public class TestMaison {
 
         System.out.println(maison.getSuperficieTotal());
         System.out.println(maison.getSuperficieParEtage(1));
+        System.out.println(maison.getSuperficieTotalPiece(chambre.getType()));
+        System.out.println(maison.getNombrePiece(chambre.getType()));
     }
 }

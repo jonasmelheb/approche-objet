@@ -5,15 +5,16 @@ public abstract class Piece extends Maison{
     private int etage;
 
     public Piece(double superficie, int etage) {
-        this.superficie = superficie;
-        this.etage = etage;
+        if (superficie >= 0 && etage >= 0) {
+            this.superficie = superficie;
+            this.etage = etage;
+        }
     }
+    public abstract String getType();
 
     public double getSuperficie() {
         return superficie;
     }
-
-
 
     public void setSuperficie(double superficie) {
         this.superficie = superficie;

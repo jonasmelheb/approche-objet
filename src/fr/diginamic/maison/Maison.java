@@ -31,4 +31,24 @@ public class Maison {
         }
         return superficie;
     }
+    public double getSuperficieTotalPiece(String type) {
+        double superficie = 0;
+        for (Piece piece:
+                pieces) {
+            if (piece.getType().equals(type)){
+                superficie += piece.getSuperficie();
+            }
+        }
+        return superficie;
+    }
+    public int getNombrePiece(String type) {
+        int nbPiece = 0;
+        for (Piece piece:
+                pieces) {
+            if (piece.getType().equals(type)){
+                nbPiece++;
+            }
+        }
+        return nbPiece;
+    }
 }
