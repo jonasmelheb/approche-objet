@@ -10,7 +10,7 @@ public class Jouer {
         Personnage personnage = new Personnage(0,0,0);
         while (!stop) {
             System.out.println(
-                    "Veuillez sélectionner : \n Taper 1 pour creer un presonnage \n Taper 2 pour Combattre une créature:");
+                    "Veuillez sélectionner : \n Taper 1 pour creer un presonnage \n Taper 2 pour Combattre une créature \n Taper 3 pour Afficher le score \n Taper 4 pour Quitter le jeu");
             int choix = scanner.nextInt();
             switch (choix) {
                 case 1:
@@ -81,6 +81,12 @@ public class Jouer {
                     } else {
                         System.out.println("Vous avez " + personnage.getPointDeVie() + " vie il faut creer un personnage");
                     }
+                    break;
+                case 3:
+                    System.out.println("Votre score est = " + personnage.getScore());
+                    break;
+                case 4:
+                    stop = true;
                     break;
                 default:
                     System.out.println(
