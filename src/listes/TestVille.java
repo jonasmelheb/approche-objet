@@ -30,17 +30,27 @@ public class TestVille {
         System.out.println(villes);
 
         System.out.println("Afficher la ville qui a plus de popu : ");
-        int temp = 0;
-        Ville ville = null;
+        int maxValue = villes.get(0).getNbHab();
+        Ville villeMax = null;
         for (int i = 0; i < villes.size(); i++) {
-            for(int j = i+1; j < villes.size(); j++){
-                if(villes.get(i).getNbHab() > villes.get(j).getNbHab()){
-                    temp = villes.get(i).getNbHab();
-                    ville = villes.get(i);
-                }
+            if (villes.get(i).getNbHab() > maxValue) {
+                maxValue = villes.get(i).getNbHab();
+                villeMax = villes.get(i);
             }
         }
-        System.out.println(ville);
+        System.out.println(villeMax);
+
+        int minValue = villes.get(0).getNbHab();
+        Ville villeMin = null;
+        for (int i = 0; i < villes.size(); i++) {
+            if (villes.get(i).getNbHab() < minValue) {
+                minValue = villes.get(i).getNbHab();
+                villeMin = villes.get(i);
+            }
+        }
+        villes.remove(villes.indexOf(villeMin));
+        System.out.println(villes);
+
 
 
 
