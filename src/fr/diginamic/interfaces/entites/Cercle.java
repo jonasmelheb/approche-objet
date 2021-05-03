@@ -1,6 +1,6 @@
-package fr.diginamic.banque.entites;
+package fr.diginamic.interfaces.entites;
 
-public class Cercle implements ObjetGeometrique{
+public class Cercle implements ObjetGeometrique {
     private double rayon;
 
     public Cercle(double rayon) {

@@ -1,6 +1,6 @@
-package fr.diginamic.banque.entites;
+package fr.diginamic.interfaces.entites;
 
-public class Rectangle implements ObjetGeometrique{
+public class Rectangle implements ObjetGeometrique {
     private int largeur;
     private int longeur;
 

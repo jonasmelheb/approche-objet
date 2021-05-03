@@ -1,8 +1,8 @@
-package fr.diginamic.banque.essais;
+package fr.diginamic.interfaces.essais;
 
-import fr.diginamic.banque.entites.Cercle;
-import fr.diginamic.banque.entites.ObjetGeometrique;
-import fr.diginamic.banque.entites.Rectangle;
+import fr.diginamic.interfaces.entites.Cercle;
+import fr.diginamic.interfaces.entites.ObjetGeometrique;
+import fr.diginamic.interfaces.entites.Rectangle;
 
 public class TestObjetGeometrique {
     public static void main(String[] args) {
