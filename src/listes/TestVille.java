@@ -1,9 +1,6 @@
 package listes;
 
 import java.util.ArrayList;
-import java.util.Collections;
-
-import static java.util.Comparator.comparing;
 
 public class TestVille {
     public static void main(String[] args) {
@@ -40,6 +37,7 @@ public class TestVille {
         }
         System.out.println(villeMax);
 
+        // Remove
         int minValue = villes.get(0).getNbHab();
         Ville villeMin = null;
         for (int i = 0; i < villes.size(); i++) {
@@ -50,9 +48,6 @@ public class TestVille {
         }
         villes.remove(villes.indexOf(villeMin));
         System.out.println(villes);
-
-
-
 
         // Maj les villes plus de 100_000
         for (int i = 0; i < villes.size(); i++) {
