@@ -31,7 +31,6 @@ public class ComptagePaysParContinent {
         Iterator<Pays> iterator = pays.iterator();
         while (iterator.hasNext())
         {
-
             Pays paysPut = iterator.next();
             if (mapPays.get(paysPut.getContinent()) == null) {
                 mapPays.put(paysPut.getContinent(), 1);
