@@ -1,7 +1,5 @@
 package maps;
 
-import listes.Ville;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -9,7 +7,7 @@ import java.util.Iterator;
 public class ComptagePaysParContinent {
     public static void main(String[] args) {
         /**
-         * France, 65 millions d’habitants, Europe
+         * o France, 65 millions d’habitants, Europe
          * o Allemagne, 80 millions d’habitants, Europe
          * o Belgique, 10 millions d’habitants, Europe
          * o Russie, 150 millions d’habitants, Asie
