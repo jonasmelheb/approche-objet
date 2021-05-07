@@ -12,7 +12,8 @@ public class Application {
                             "Taper 1 pour avoir la Population d’une ville \n " +
                             "Taper 2 pour avoir la Population d’un département donné \n " +
                             "Taper 3 pour avoir la Population d’une région donnée \n " +
-                            "Taper 4 pour Afficher les 10 régions les plus peuplées");
+                            "Taper 4 pour Afficher les 10 régions les plus peuplées \n " +
+                            "Taper 5 pour Afficher les 10 départements les plus peuplés \n");
             int choix = scanner.nextInt();
             switch (choix) {
                 case 1:
@@ -36,6 +37,10 @@ public class Application {
                 case 4:
                     RechercheRegionPeuple rechercheRegionPeuple = new RechercheRegionPeuple();
                     rechercheRegionPeuple.traiter(recensement, null);
+                    break;
+                case 5:
+                    RechercheDepartementPeuple rechercheDepartementPeuple = new RechercheDepartementPeuple();
+                    rechercheDepartementPeuple.traiter(recensement, null);
                     break;
                 default:
                     System.out.println(
