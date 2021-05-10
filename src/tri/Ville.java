@@ -10,9 +10,13 @@ public class Ville implements Comparable<Ville>{
     }
     @Override
     public int compareTo(Ville autre) {
-        int result = this.nom.compareTo(autre.getNom());
-
-        return result;
+        if (this.nbHab < autre.getNbHab()){
+            return 1;
+        }
+        if (this.nbHab > autre.getNbHab()){
+            return -1;
+        }
+        return 0;
     }
 
     @Override
