@@ -23,11 +23,11 @@ public class TestCalendar {
         System.out.println(chaine1);
 
         //Question3
-        dateFormat = new SimpleDateFormat("EEEEE/MMMM", Locale.FRANCE);
+        dateFormat = new SimpleDateFormat("EEEEE MMMM yyyy", Locale.GERMANY);
         String dateFr = dateFormat.format(date1);
-        dateFormat = new SimpleDateFormat("EEEEE/MMMM", Locale.CHINA);
+        dateFormat = new SimpleDateFormat("EEEEE MMMM yyyy", Locale.CHINA);
         String dateCh = dateFormat.format(date1);
-        dateFormat = new SimpleDateFormat("EEEEE/MMMM", new Locale("RU"));
+        dateFormat = new SimpleDateFormat("EEEEE MMMM yyyy", new Locale("RU"));
         String dateRu = dateFormat.format(date1);
 
         System.out.println(dateFr);

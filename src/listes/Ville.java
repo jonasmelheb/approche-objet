@@ -6,10 +6,13 @@ import java.util.Objects;
 public class Ville {
     private String nom;
     private int nbHab;
+    private Continent continent;
 
-    public Ville(String nom, int nbHab) {
+
+    public Ville(String nom, int nbHab, Continent continent) {
         this.nom = nom;
         this.nbHab = nbHab;
+        this.continent = continent;
     }
 
     @Override
@@ -17,15 +20,17 @@ public class Ville {
         return "Ville{" +
                 "nom='" + nom + '\'' +
                 ", nbHab=" + nbHab +
+                ", continent=" + continent.getLibelle() +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Ville)){
+            return false;
+        }
         Ville ville = (Ville) o;
-        return nbHab == ville.nbHab && Objects.equals(nom, ville.nom);
+        return this.nbHab == ville.getNbHab() && this.nom.equals(ville.getNom());
     }
 
     public String getNom() {
@@ -42,5 +47,13 @@ public class Ville {
 
     public void setNbHab(int nbHab) {
         this.nbHab = nbHab;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent continent) {
+        this.continent = continent;
     }
 }
