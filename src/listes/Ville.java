@@ -1,6 +1,7 @@
 package listes;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Ville {
     private String nom;
@@ -17,6 +18,14 @@ public class Ville {
                 "nom='" + nom + '\'' +
                 ", nbHab=" + nbHab +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ville ville = (Ville) o;
+        return nbHab == ville.nbHab && Objects.equals(nom, ville.nom);
     }
 
     public String getNom() {
